@@ -40,7 +40,7 @@
             align-items: center;
             background: transparent; /* 移除半透明背景 */
             border-radius: 10px;
-            box-shadow: transparent;
+            box-shadow: transparent; /* 移除半透明投影 */
             transition: transform 0.3s ease; /* 平滑动效 */
         }
         .swiper-slide img {
@@ -98,7 +98,7 @@
         const swiper = new Swiper('.swiper-container', {
             loop: true, // 无限循环
             autoplay: {
-                delay: 3000, // 每3秒切换
+                delay: 5000, // 每5秒切换
                 disableOnInteraction: false,
             },
             effect: 'fade', // 平滑淡入淡出切换
